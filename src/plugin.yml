@@ -1,0 +1,16 @@
+main: com.panjaco.snowballspleef.SnowballSpleef
+version: 1.0.0
+name: Snowball Spleef
+commands:
+  spleefblock:
+    description: Give yourself a spleef block, it can be broken by throwing a snowball at it
+    usage: /spleefblock
+    permission: snowballspleef.block
+permissions:
+  snowballspleef.*:
+    description: Access to all of the Snowball Spleef commands
+    default: op
+    children:
+      snowballspleef.block: true
+  snowballspleef.block:
+    description: Access to get a Spleef Block
